@@ -1,108 +1,171 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1>Welcome to my portfolio</h1>
-    </body>
-    <script>
-        console.log("This is a simple portfolio page.");   
-        document.querySelector('h1').addEventListener('click', function() {
-            alert('Hello! Thanks for visiting my portfolio.');
-        });
-    </script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        h1 {
-            color: #333;
-        }
-        h1:hover {
-            color: #007BFF;
-            cursor: pointer;
-        }
-        body {
-            background-color: #f4f4f4;
-        }
-        h1 {
-            font-size: 2.5em;
-        }
-        body {
-            padding: 20px;
-        }
-        h1 {
-            transition: color 0.3s ease;
-        }
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        h1 {
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        body {
-            background-image: linear-gradient(to right, #ece9e6, #ffffff);
-        }
-        h1 {
-            font-weight: bold;
-        }
-        body {
-            color: #555;
-        }
-        h1 {
-            margin-bottom: 20px;
-        }
-        body {
-            box-sizing: border-box;
-        }
-        h1 {
-            padding: 10px;
-            border-radius: 5px;
-            background-color: #e0e0e0;
-        }
-        body {
-            overflow: hidden;
-        }
-        h1 {
-            border: 2px solid #ccc;
-        }
-        body {
-            transition: background-color 0.5s ease;
-        }
-        h1 {
-            cursor: pointer;
-            user-select: none;
-        }
-        body {
-            font-size: 18px;
-        }
-        </style>
-    <footer>
-        <p>© 2025 Sujan Panta. All rights reserved.</p>
-    </footer>
-    <style>
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            color: #777;
-            font-size: 14px;
-        }
-        footer p {
-            margin: 0;
-        }
-        body {
-            padding-bottom: 40px; /* Space for footer */
-        }
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: #f4f4f4;
-            border-top: 1px solid #ccc;
-        }
-        </style>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sujan Panta | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <style>
+    :root {
+      --bg-color: #121212;
+      --text-color: #f4f4f4;
+      --accent-color: #00bcd4;
+      --card-color: #1e1e1e;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    header {
+      background-color: #000;
+      padding: 30px;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 5px;
+    }
+    header p span {
+      color: var(--accent-color);
+    }
+    section {
+      padding: 30px 20px;
+      max-width: 960px;
+      margin: auto;
+      animation: slideUp 1s ease-in;
+    }
+    .social a {
+      margin-right: 15px;
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .certifications a, .projects a {
+      display: block;
+      margin: 5px 0;
+      color: var(--accent-color);
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+    .certifications a:hover, .projects a:hover {
+      transform: scale(1.03);
+    }
+    .skills, .soft-skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skills span, .soft-skills span {
+      background: var(--card-color);
+      padding: 8px 12px;
+      border-radius: 20px;
+      color: var(--accent-color);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sujan Panta</h1>
+    <p><span id="typed-text"></span></p>
+    <p>📧 <a href="mailto:sujanpanta0085@gmail.com" style="color: var(--accent-color);">sujanpanta0085@gmail.com</a> | 📞 9742467500 | Tokha, Kathmandu</p>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/sujanpanta1" target="_blank">LinkedIn</a>
+      <a href="https://github.com/SujanPanta9" target="_blank">GitHub</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>Seeking an opportunity in network engineering to leverage expertise in network design, troubleshooting, and security. I aim to enhance and utilize my technical skills in managing and optimizing network performance while contributing to robust systems.</p>
+
+    <h2>Education</h2>
+    <ul>
+      <li><strong>BSc. (Hons) Computer Networking and IT Security</strong>, Islington College, 2022-2025</li>
+      <li><strong>High School</strong>, Takshashila Academy, 2017-2020</li>
+      <li><strong>SLC</strong>, Panchayan Celestial School, 2017</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Python</span>
+      <span>Java</span>
+      <span>Cisco Packet Tracer</span>
+      <span>Windows</span>
+      <span>Linux</span>
+    </div>
+
+    <h3>Soft Skills</h3>
+    <div class="soft-skills">
+      <span>Communication</span>
+      <span>Time Management</span>
+      <span>Critical Thinking</span>
+      <span>Problem Solving</span>
+      <span>Team Work</span>
+    </div>
+
+    <h2>Experience</h2>
+    <p><strong>IT Support Intern</strong> - Grande International Hospital, July - October</p>
+
+    <h2>Certifications</h2>
+    <div class="certifications">
+      <a href="https://www.credly.com/earner/earned/badge/268061ff-2428-4649-93e0-0babf63d1147" target="_blank">Introduction to Cyber Security</a>
+      <a href="https://www.credly.com/earner/earned/badge/83c121ec-0c47-4823-80f4-7e73fb5b3d93" target="_blank">AWS Academy Cloud Foundation</a>
+      <a href="https://www.credly.com/earner/earned/badge/3064b3e9-6dd5-4a97-9de7-7b9af295c209" target="_blank">AWS Academy Cloud Security Foundations</a>
+      <a href="https://www.credly.com/earner/earned/badge/a593d581-da0d-4ee4-bc44-b13fd59f3fd5" target="_blank">Network Addressing and Basic Troubleshooting</a>
+      <a href="https://www.credly.com/earner/earned/badge/89bad0ec-ec63-4849-82a2-abe6656cebfc" target="_blank">AWS Cloud Quest Cloud Practitioner</a>
+      <a href="https://www.credly.com/earner/earned/badge/1720470d-84ee-49c2-96f5-c69d4035d64e" target="_blank">Networking Device and Initial Configuration</a>
+      <a href="https://www.credly.com/earner/earned/badge/e047c8b8-0d18-4eb9-8cd4-ddf5de7b279b" target="_blank">Networking Basics</a>
+      <a href="https://www.credly.com/earner/earned/badge/49300b4e-bfd5-4b9c-a813-904b05e0a05d" target="_blank">AWS Academy Data Center Technicians</a>
+      <a href="https://www.credly.com/earner/earned/badge/449cfbb4-057f-47d0-87e7-9996e45df5d8" target="_blank">AWS Academy Cloud Operations</a>
+      <a href="https://www.credly.com/earner/earned/badge/3f5de914-c63f-464d-ac32-aa45c6963d87" target="_blank">Network Support and Security</a>
+      <a href="https://www.credly.com/earner/earned/badge/6b61a71a-799b-4716-83db-6c73ec06ecd3" target="_blank">Network Technician Career Path Exam</a>
+    </div>
+
+    <h2>Projects</h2>
+    <div class="projects">
+      <a href="https://github.com/SujanPanta9/Computer-Shop-using-Python" target="_blank">Interactive E-commerce Program using Python</a>
+      <a href="https://github.com/SujanPanta9/Simple-Calculator-using-python/blob/main/Calculator" target="_blank">Simple Calculator using Python</a>
+      <a href="https://github.com/SujanPanta9/Automated-Vulnerability-Scanner-for-IoT-Device" target="_blank">Automated Vulnerability Scanner for IoT Devices</a>
+    </div>
+
+    <h2>Reference</h2>
+    <p><strong>Dr. Sanjeev Uprety</strong><br>Email: drupretys@gmail.com<br>HOD, IT Department, Grande International Hospital</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sujan Panta. All rights reserved.</p>
+  </footer>
+
+  <script>
+    var typed = new Typed("#typed-text", {
+      strings: ["Network Engineer", "Cybersecurity Enthusiast", "IT Support Specialist"],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true
+    });
+  </script>
+</body>
 </html>
