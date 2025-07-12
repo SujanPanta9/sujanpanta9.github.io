@@ -3,224 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sujan Panta | Network Engineer</title>
+  <title>Sujan Panta | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pn8GzuZf4hBo4sTfAb8Emrcdsvm1FOT3K6Ti/lHwhI7K5QqO/mxdpqOpQfbA+S7C2mFfL1a7IfD1AEwqZgz6Bg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-    :root {
-      --bg-color: #0f0f0f;
-      --text-color: #ffffff;
-      --primary-color: #00bcd4;
-      --card-color: #1e1e1e;
-      --hover-color: #00acc1;
-    }
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
     body {
+      margin: 0;
       font-family: 'Roboto', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      scroll-behavior: smooth;
-    }
-    header {
-      background-color: #000;
-      padding: 40px 20px;
+      background: #111;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       text-align: center;
-      border-bottom: 2px solid var(--primary-color);
     }
-    header h1 {
+    h1 {
       font-size: 3em;
+      color: #ffd700;
       margin-bottom: 10px;
     }
-    header p {
+    p {
+      color: #bbb;
       font-size: 1.2em;
-      color: var(--primary-color);
     }
-    .social a {
-      margin: 0 10px;
-      color: var(--primary-color);
-      font-size: 1.2em;
-      text-decoration: none;
-    }
-    .social a i {
-      margin-right: 6px;
-    }
-    nav {
-      background-color: #1a1a1a;
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      padding: 15px;
-    }
-    nav a {
-      color: var(--text-color);
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: var(--hover-color);
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    section h2 {
-      color: var(--primary-color);
-      margin-bottom: 20px;
-    }
-    .skills span, .soft-skills span {
+    a.button {
       display: inline-block;
-      margin: 5px;
-      background: var(--card-color);
-      padding: 10px 15px;
-      border-radius: 20px;
-      color: var(--primary-color);
-    }
-    .certifications a, .projects a {
-      display: block;
-      margin: 8px 0;
-      color: var(--primary-color);
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .certifications a:hover, .projects a:hover {
-      transform: translateX(10px);
-    }
-    .download-section {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .download-section a {
-      background: var(--primary-color);
-      padding: 12px 25px;
-      border-radius: 30px;
+      margin-top: 20px;
+      padding: 15px 30px;
+      background-color: #ff4081;
       color: #000;
-      text-decoration: none;
       font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s ease;
     }
-    .icon-label {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .icon-label i {
-      font-size: 1.2em;
-    }
-    footer {
-      background: #111;
-      text-align: center;
-      padding: 20px;
-      color: #888;
+    a.button:hover {
+      background-color: #ff79a9;
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>Sujan Panta</h1>
-    <p><span id="typed-text"></span></p>
-    <div class="social">
-      <a href="https://www.linkedin.com/in/sujanpanta1" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
-      <a href="https://github.com/SujanPanta9" target="_blank"><i class="fab fa-github"></i>GitHub</a>
-      <a href="mailto:sujanpanta0085@gmail.com"><i class="fas fa-envelope"></i>Email</a>
-    </div>
-  </header>
-
-  <nav>
-    <a href="#about"><i class="fas fa-user"></i> About</a>
-    <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
-    <a href="#skills"><i class="fas fa-code"></i> Skills</a>
-    <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
-    <a href="#certifications"><i class="fas fa-certificate"></i> Certifications</a>
-    <a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
-  </nav>
-
-  <section id="about">
-    <h2><i class="fas fa-user"></i> About Me</h2>
-    <p>I'm an aspiring network engineer with strong interests in cybersecurity and IT support. I focus on designing, optimizing, and securing network systems to build reliable digital infrastructure.</p>
-  </section>
-
-  <section id="education">
-    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-    <ul>
-      <li><strong>BSc. (Hons) Computer Networking and IT Security</strong>, Islington College, 2022–2025</li>
-      <li><strong>High School</strong>, Takshashila Academy, 2017–2020</li>
-      <li><strong>SLC</strong>, Panchayan Celestial School, 2017</li>
-    </ul>
-  </section>
-
-  <section id="skills">
-    <h2><i class="fas fa-code"></i> Technical Skills</h2>
-    <div class="skills">
-      <span><i class="fab fa-python"></i> Python</span>
-      <span><i class="fab fa-java"></i> Java</span>
-      <span><i class="fas fa-network-wired"></i> Cisco Packet Tracer</span>
-      <span><i class="fab fa-windows"></i> Windows</span>
-      <span><i class="fab fa-linux"></i> Linux</span>
-    </div>
-
-    <h3><i class="fas fa-user-friends"></i> Soft Skills</h3>
-    <div class="soft-skills">
-      <span><i class="fas fa-comments"></i> Communication</span>
-      <span><i class="fas fa-clock"></i> Time Management</span>
-      <span><i class="fas fa-brain"></i> Critical Thinking</span>
-      <span><i class="fas fa-lightbulb"></i> Problem Solving</span>
-      <span><i class="fas fa-users"></i> Team Work</span>
-    </div>
-  </section>
-
-  <section id="experience">
-    <h2><i class="fas fa-briefcase"></i> Experience</h2>
-    <p><strong>IT Support Intern</strong> – Grande International Hospital<br>July – October</p>
-  </section>
-
-  <section id="certifications">
-    <h2><i class="fas fa-certificate"></i> Certifications</h2>
-    <div class="certifications">
-      <a href="https://www.credly.com/earner/earned/badge/268061ff-2428-4649-93e0-0babf63d1147" target="_blank">Introduction to Cyber Security</a>
-      <a href="https://www.credly.com/earner/earned/badge/83c121ec-0c47-4823-80f4-7e73fb5b3d93" target="_blank">AWS Academy Cloud Foundation</a>
-      <a href="https://www.credly.com/earner/earned/badge/3064b3e9-6dd5-4a97-9de7-7b9af295c209" target="_blank">AWS Academy Cloud Security Foundations</a>
-      <a href="https://www.credly.com/earner/earned/badge/a593d581-da0d-4ee4-bc44-b13fd59f3fd5" target="_blank">Network Addressing and Basic Troubleshooting</a>
-      <a href="https://www.credly.com/earner/earned/badge/89bad0ec-ec63-4849-82a2-abe6656cebfc" target="_blank">AWS Cloud Quest Cloud Practitioner</a>
-      <a href="https://www.credly.com/earner/earned/badge/1720470d-84ee-49c2-96f5-c69d4035d64e" target="_blank">Networking Device and Initial Configuration</a>
-      <a href="https://www.credly.com/earner/earned/badge/e047c8b8-0d18-4eb9-8cd4-ddf5de7b279b" target="_blank">Networking Basics</a>
-      <a href="https://www.credly.com/earner/earned/badge/49300b4e-bfd5-4b9c-a813-904b05e0a05d" target="_blank">AWS Academy Data Center Technicians</a>
-      <a href="https://www.credly.com/earner/earned/badge/449cfbb4-057f-47d0-87e7-9996e45df5d8" target="_blank">AWS Academy Cloud Operations</a>
-      <a href="https://www.credly.com/earner/earned/badge/3f5de914-c63f-464d-ac32-aa45c6963d87" target="_blank">Network Support and Security</a>
-      <a href="https://www.credly.com/earner/earned/badge/6b61a71a-799b-4716-83db-6c73ec06ecd3" target="_blank">Network Technician Career Path Exam</a>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2><i class="fas fa-project-diagram"></i> Projects</h2>
-    <div class="projects">
-      <a href="https://github.com/SujanPanta9/Computer-Shop-using-Python" target="_blank">Interactive E-commerce Program using Python</a>
-      <a href="https://github.com/SujanPanta9/Simple-Calculator-using-python/blob/main/Calculator" target="_blank">Simple Calculator using Python</a>
-      <a href="https://github.com/SujanPanta9/Automated-Vulnerability-Scanner-for-IoT-Device" target="_blank">Automated Vulnerability Scanner for IoT Devices</a>
-    </div>
-  </section>
-
-  <section class="download-section">
-    <h2><i class="fas fa-file-download"></i> Download My Resume</h2>
-    <a href="Sujan_Panta_CV.pdf" download><i class="fas fa-download"></i> Download PDF</a>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Sujan Panta. All rights reserved.</p>
-  </footer>
-
-  <script>
-    var typed = new Typed("#typed-text", {
-      strings: ["Network Engineer", "Cybersecurity Enthusiast", "IT Support Specialist"],
-      typeSpeed: 50,
-      backSpeed: 30,
-      loop: true
-    });
-  </script>
+  <h1>Welcome to My Portfolio</h1>
+  <p>Click below to enter the site</p>
+  <a href="portfolio/Sujan%20Portfolio.html" class="button">Enter Portfolio</a>
 </body>
 </html>
